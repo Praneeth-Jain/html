@@ -88,11 +88,16 @@
 .blank{
     height: 30vh;
 }
-/* 
+
 .vertical-text {
     transform: rotate(90deg);
     transform-origin: left top;
     white-space: nowrap;
     height: 100vh;
     width: 20vw;
-} */
+    position:absolute;
+    float:left;
+}
+
+
+

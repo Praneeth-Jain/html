@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .cont {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .green {
+            background-color: chartreuse;
+            height: 20vh;
+            width: 100%;
+        }
+
+        .cream {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            height: 60vh;
+            width: 100%;
+        }
+
+        .creams, .white {
+            height: 60vh;
+            width: 48%;
+            margin-bottom: 10px;
+        }
+
+        .creams {
+            background-color: cornsilk;
+            padding: 10px;
+        }
+
+        .white {
+            background-color: white;
+        }
+
+        .freind-cont {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .freindcard {
+            background-color: #fff;
+            border: 1px solid black;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        img {
+            height: 8vh;
+            width: auto;
+            max-width: 25%;
+            object-fit: cover;
+        }
+
+        .green-dot {
+            width: 20px;
+            height: 20px;
+            background-color: green;
+            border-radius: 50%;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-left: 10px;
+        }
+
+        /* Media queries to ensure layout adapts */
+        @media (max-width: 768px) {
+            .creams, .white {
+                width: 100%;
+                height: auto;
+            }
+
+            .cream {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .freindcard {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            img {
+                width: 50px;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .green {
+                height: 10vh;
+            }
+
+            .freindcard {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            img {
+                width: 20vw;
+                height: auto;
+            }
+
+            .green-dot {
+                width: 4vw;
+                height: 4vw;
+            }
+
+            .info {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="green"></div>
+        <div class="cream">
+            <div class="creams">
+                <audio controls loop>
+                    <source src="./aud/audio.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="white"></div>
+            <div class="creams">
+                <div class="freind-cont">
+                    <div class="freindcard">
+                        <img src="./img/virat.jpg" alt="Virat">
+                        <div class="info">
+                            <p>Virat Kohli</p>
+                            <div class="green-dot"></div>
+                        </div>
+                    </div>
+                    <div class="freindcard">
+                        <img src="./img/messi.jpg" alt="Messi">
+                        <div class="info">
+                            <p>Lionel Messi</p>
+                            <div class="green-dot"></div>
+                        </div>
+                    </div>
+                    <div class="freindcard">
+                        <img src="./img/lewis.jpg" alt="Lewis">
+                        <div class="info">
+                            <p>Lewis Hamilton</p>
+                            <div class="green-dot"></div>
+                        </div>
+                    </div>
+                    <div class="freindcard">
+                        <img src="./img/rohit.jpg" alt="Rohit">
+                        <div class="info">
+                            <p>Rohit Sharma</p>
+                            <div class="green-dot"></div>
+                        </div>
+                    </div>
+                    <div class="freindcard">
+                        <img src="./img/ronaldo.jpg" alt="Ronaldo">
+                        <p>Ronaldo</p>
+                        <div class="green-dot"></div>
+                    </div>
+                    <div class="freindcard">
+                        <img src="./img/dybala.jpg" alt="Dybala">
+                        <p>Dybala</p>
+                        <div class="green-dot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="green"></div>
+    </div>
+</body>
+</html>
