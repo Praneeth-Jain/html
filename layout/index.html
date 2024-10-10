@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont{
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh   ;
+        }
+        .green{
+            background-color: chartreuse;
+            height: 20vh;
+            width: 100vw;
+        }
+        .cream{
+            height: 60vh;
+            width: 100vw;
+            display: flex;
+            justify-content:flex-start; 
+        }
+        .creams{
+            background-color: cornsilk;
+            width: 30vw;
+            height: 60vh;
+        }
+        .white{
+            background-color: white;
+            width: 40vw;
+            height: 60vh;
+            
+        }
+
+        .freind-cont{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .freindcard{
+            background-color: #fff;
+            height: 10vh;
+            width: 25vw;
+            border: 1px black solid;
+            margin-left: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items:center;
+        }
+
+        img{
+            height: 8vh;
+            width: 8vw;
+        }
+        .green-dot{
+            width:2vw;
+            height: 3vh;
+            background-color: green;
+            border-radius: 50%;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        .info{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="green"></div>
+        <div class="cream">
+            <div class="creams">
+                <audio controls loop>
+                    <source src="./aud/audio.mp3" type="audio/mpeg">
+                  </audio>
+            </div>
+            <div class="white"></div>
+            <div class="creams">
+                <div class="freind-cont">
+                    <div class="freindcard">
+                        <img src="./img/virat.jpg" alt="">
+                        <div class="info">
+                            <p>Virat Kohli </p>
+                            <div class="green-dot">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="freindcard">
+                        <img src="./img/messi.jpg" alt="">
+                        <div class="info">
+                            <p>Lionel Messi </p>
+                            <div class="green-dot">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="freindcard">
+                        <img src="./img/lewis.jpg" alt="">
+                        <div class="info">
+                            <p>Lewis Hamilton </p>
+                            <div class="green-dot">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="freindcard">
+                        <img src="./img/rohit.jpg" alt="">
+                        <div class="info">
+                            <p>Rohit Sharma</p>
+                            <div class="green-dot">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="freindcard">
+                        <img src="./img/ronaldo.jpg" alt="">
+
+                            <p>Ronaldo </p>
+                            <div class="green-dot">
+                    
+                        </div>
+                    </div>
+                    <div class="freindcard">
+                        <img src="./img/dybala.jpg" alt="">
+                        
+                            <p>Dybala </p>
+                            <div class="green-dot">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="green"></div>
+    </div>
+</body>
+</html>

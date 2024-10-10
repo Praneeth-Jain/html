@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+        .cont{
+            width: 50vw;
+            height: 50vh;
+            border: 10px black solid;
+            margin-left: 20vw;
+            margin-top: 20vh;
+            background-color: aliceblue;
+        }
+        h1{
+            margin-left: 20vw;
+        }
+        .text-cont{
+            display: flex;
+            flex-direction: column;
+            margin-top: 7vh;
+        }
+        #email,#password,label{
+            height: 3vh;
+            width: 10vw;
+            margin-left: 10vw;
+            margin-top: 1vh;
+        }
+        .btn-cont{
+            margin-top: 7vh;
+            margin-left: 10vw;
+        }
+        .login-btn{
+            width: 5vw;
+            height: 3vh;
+            background-color: cornflowerblue;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <h1>Login </h1>
+        <form action="">
+            <div class="text-cont">
+                <label for="email">Email : </label>
+                <input type="email" id="email" name="email">
+                <label for="password">Password : </label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="btn-cont">
+                
+                <input type="submit" value="Login" class="login-btn">
+                <a href="./Register.html">Create new Account</a>
+            </div>
+        </form>
+</div>
+</body>
+</html>

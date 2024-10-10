@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td,th{
+            padding: 25px;
+            border: 2px #fff solid;
+        }
+        #table{
+            margin: auto;
+            background-color: black;
+            color:#fff;
+            border: 10px steelblue solid;
+            width: 60vw;
+        }
+        #heading{
+            /* margin-left: 40%; */
+            margin-top: 10vh;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+        #cont{
+            border: 5px #fff solid;
+            display: flex;
+            flex-direction: column;
+            height: 90vh;
+            
+            align-items: center;
+        }
+        marquee{
+            padding: auto;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="cont">
+
+        <h1 id="heading">Time Table</h1>
+        <table id="table" >
+            <tr>
+                <th>Day</th>
+                <th>9:30-11:00</th>
+                <th>11:30-1:00</th>
+                <th>2:00-3:30</th>
+                <th>4:00-6:00</th>
+            </tr>
+            <tr>
+                <th>Mon</th>
+                <td>English</td>
+                <td>Physics</td>
+                <td>Computer Science</td>
+                <td>Chemistry</td>
+                
+            </tr>
+            <tr>
+                <th>Tue</th>
+                <td>Computer Science</td>
+                <td>Physics</td>
+                <td>Chemistry</td>
+                <td>English</td>
+                
+            </tr>
+            <tr>
+                <th>Wed</th>
+                <td>English</td>
+                <td>Chemistry</td>
+                <td>Computer Science</td>
+                <td>Physics</td>
+                
+            </tr>
+            <tr>
+                <th>Thu</th>
+                <td>English</td>
+                <td>Physics</td>
+                <td>Chemistry</td>
+                <td>Computer Science</td>
+                
+            </tr>
+            <tr>
+                <th>Fri</th>
+                <td>English</td>
+                <td>Computer Science</td>
+                <td>Physics</td>
+                <td>Chemistry</td>
+                
+            </tr>
+            <tr>
+                <th>Sat</th>
+                <td>English</td>
+                <td>Computer Science</td>
+                <td colspan="2"></td>
+            </tr>
+        </table>
+        <marquee behavior="" direction="">Thank You..</marquee>
+    </div>
+</body>
+</html>
