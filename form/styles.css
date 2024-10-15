@@ -1,0 +1,76 @@
+.cont{
+    height: 100vh;
+    width: 75vw;
+    background-color: antiquewhite;
+    margin:40px;
+}
+
+form{
+    padding: auto;
+   
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin: 5px;
+}
+
+.text{
+    width: 50%;
+    height: 3vh;    
+    margin: 5px;
+}
+
+.btn
+{
+    width: 25%;
+    margin: auto;
+    height: 30px;
+    background-color: green;
+    color: aliceblue;
+}
+
+select{
+    margin-left: 50px;
+    width: 75%;
+    height: 30px;
+}
+
+.reset-btn
+{
+    width: 25%;
+    margin: auto;
+    height: 30px;
+    background-color: red;
+    color: aliceblue;
+}
+
+.contact-btn{
+    height: 30px;
+    width: 70px;
+    margin-left: 30px;
+    border: 2px black solid;
+    background-color: aliceblue;
+}
+
+.contact-btn:hover{
+    cursor: pointer;
+}
+
+#contact-inp{
+    display: none;
+}
+
+#contact-label{
+    display: none;
+}
+
+.err-span{
+    display: none;
+    color: red;
+    font-weight: 300;
+}
+
