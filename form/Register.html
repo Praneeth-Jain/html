@@ -9,16 +9,16 @@
 <body>
     <script src="../../javascript/jquery/jquery-3.7.1.min.js"></script>
     <div class="cont">
-        <form action="" class="reg-form">
-
+        <form action=""  class="reg-form">
+            <span class="error-msg"></span>
             <label for="email">Email : </label>
-            <input type="email" id="email" class="text">
-            <span class="err-span email-err">Email is Required</span>
+            <input type="email" name="email" id="email" class="text">
+            <!-- <span class="err-span email-err">Email is Required</span> -->
             <br>
             <label for="pass">Password :</label>
             <p id="pinfo"></p>
             <input type="password" name="pass" id="pass" class="text" onfocusout="passCheck()" onfocus="pInfo()">
-            <span class="err-span pass-err">Password is Required</span>
+            <!-- <span class="err-span pass-err">Password is Required</span> -->
             <p id="perror"></p>
             <br>
             <p class="contact-btn">+ contact</p>
@@ -26,7 +26,7 @@
             <input type="text" class="text" id="contact-inp">
             <label for="address">Address : </label>
             <input type="textbox" name="address" id="address" class="text">
-            <span class="err-span add-err">Address is Required</span>
+            <!-- <span class="err-span add-err">Address is Required</span> -->
             <br>
             <label >Gender : </label>
             <br>
@@ -35,7 +35,7 @@
                 <input type="radio" name="gender" id="male" value="Male">
                 <label for="female">Female</label>
                 <input type="radio" name="gender" id="female" value="Female">
-                <span class="err-span gender-err">Gender is Required</span>        
+                <!-- <span class="err-span gender-err">Gender is Required</span>         -->
             </div>
             <label for="education">Education : </label>
             <select name="education" id="education">
@@ -44,7 +44,7 @@
                 <!-- <option value="Medical">Medical</option>
                 <option value="Others">Others</option> -->
             </select>
-            <span class="err-span ed-err">Education is not selected</span>
+            <!-- <span class="err-span ed-err">Education is not selected</span> -->
 
             <br>
             <label for="education">Department : </label>
@@ -55,7 +55,7 @@
                 <option value="electronics">Electronics & Communication Engineering</option>
                 <option value="mechanical">Mechanical Engineering</option>
             </select>
-            <span class="err-span dept-err">Department is not Selected</span>
+            <!-- <span class="err-span dept-err">Department is not Selected</span> -->
             <div>
                 <br>
                 <label for="hobby">Hobbies :</label>
@@ -69,7 +69,7 @@
                 <label for="others">Others</label>
                 <input type="checkbox" name="Hobby" id="others">
                 <br>
-                <span class="err-span hobby-err">Hobbies are Required</span>
+                <!-- <span class="err-span hobby-err">Hobbies are Required</span> -->
                 <br>
             </div>
             <input type="submit" value="Register" class="btn">

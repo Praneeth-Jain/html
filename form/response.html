@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            height: 50vh;
+            width: 50vw;
+            display: grid;
+            place-content: center;
+            border: 3px black solid;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+
+    </div>
+    <script>
+        var params=new URLSearchParams(window.location.search)
+        var email=params.get("email")
+        var pass=params.get("pass")
+        var address=params.get("address")
+        var education=params.get("education")
+        var dept=params.get("department")
+        var gender=params.get("gender")
+        var hobby=params.get("Hobby")
+        var main=document.getElementById("main")
+        main.innerHTML="<p> email : "+email+"</p>"+"<p> address : "+address+"</p> <p>Education :"+education+"</p><p>department : "+dept+"</p><p>Gender:"+gender+"</p>";
+
+        
+    </script>
+</body>
+</html>
